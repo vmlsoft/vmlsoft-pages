@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ProblemSolution from "../components/ProblemSolution.astro";
+import CaseStudies from "../components/CaseStudies.astro";
+import WhyUs from "../components/WhyUs.astro";
+---
+
+<BaseLayout>
+  <Fragment slot="overview">
+    <Hero />
+    <ProblemSolution />
+  </Fragment>
+  <Fragment slot="details">
+    <CaseStudies />
+    <WhyUs />
+  </Fragment>
+</BaseLayout>

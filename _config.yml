@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: VMLSoft
 description: Innovative Web Development Solutions
+exclude: [_outsourcing]

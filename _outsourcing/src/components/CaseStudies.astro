@@ -1,0 +1,57 @@
+---
+// Mini Case Studies Section
+const caseStudies = [
+  {
+    title: "🛟 SaaS Infrastructure Rescue",
+    problem: "Spiraling AWS costs due to legacy infrastructure.",
+    solution: "Infrastructure refactoring and optimized deployment processes.",
+    tech: "Node.js, AWS, Terraform",
+    result: "🚨 –37% AWS spend, +80% deployment speed",
+    image: "/images/case1.png",
+  },
+  {
+    title: "🚀 Rapid MVP Launch",
+    problem:
+      "Freelancers repeatedly missed deadlines; fragmented code ownership.",
+    solution:
+      "Provided dedicated squad and implemented robust CI/CD workflows.",
+    tech: "React, Next.js, Vercel",
+    result: "⚡ Doubled release velocity",
+    image: "/images/case2.png",
+  },
+  {
+    title: "🔒 GDPR Compliance & Risk Mitigation",
+    problem: "Unclear data management posed high risk of regulatory fines.",
+    solution:
+      "Comprehensive audit, clear documentation, and secure workflow handovers.",
+    tech: "Python, Django, ClickUp",
+    result: "✅ Zero compliance issues reported",
+    image: "/images/case3.png",
+  },
+];
+---
+
+<section
+  class="max-w-4xl w-full mx-auto grid md:grid-cols-3 gap-8 mb-8 justify-items-center"
+>
+  {
+    caseStudies.map((cs) => (
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+        <div class="w-20 h-20 mb-4 flex items-center justify-center rounded-full bg-gray-100 text-4xl">
+          {cs.title.split(" ")[0]}
+        </div>
+        <h3 class="text-lg font-bold text-blue-700 mb-2">{cs.title}</h3>
+        <p class="text-sm text-gray-700 mb-2">
+          <strong>Problem:</strong> {cs.problem}
+        </p>
+        <p class="text-sm text-gray-700 mb-2">
+          <strong>Solution:</strong> {cs.solution}
+        </p>
+        <p class="text-sm text-gray-700 mb-2">
+          <strong>Tech:</strong> {cs.tech}
+        </p>
+        <p class="text-sm text-green-600 font-semibold">{cs.result}</p>
+      </div>
+    ))
+  }
+</section>
