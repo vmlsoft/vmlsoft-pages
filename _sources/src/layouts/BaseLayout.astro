@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Offer from "../components/Offer.astro";
 import Testimonials from "../components/Testimonials.astro";
 import Separator from "../components/Separator.astro";
+import HeaderLinks from "../components/HeaderLinks.astro";
 ---
 
 <html lang="en">
@@ -25,25 +26,10 @@ import Separator from "../components/Separator.astro";
         <div
           class="text-3xl font-extrabold text-blue-700 tracking-tight drop-shadow-sm"
         >
-          VMLSoft Outsourcing
+          <a href="/" class="hover:underline">VMLSoft Outsourcing</a>
         </div>
         <nav>
-          <ul class="flex space-x-6 text-gray-700">
-            <li>
-              <a
-                href="#overview"
-                class="px-3 py-1 rounded-md border border-transparent transition-all hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 shadow-sm"
-                >Overview</a
-              >
-            </li>
-            <li>
-              <a
-                href="#details"
-                class="px-3 py-1 rounded-md border border-transparent transition-all hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 shadow-sm"
-                >Details</a
-              >
-            </li>
-          </ul>
+          <HeaderLinks />
         </nav>
       </div>
     </header>

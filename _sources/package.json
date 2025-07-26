@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && rm -rf ../outsourcing && mv dist ../outsourcing && mv ../outsourcing/_astro ../outsourcing/astro && find ../outsourcing -name '*.html' -exec sed -i '' 's/_astro/astro/g' {} +",
+    "build": "astro build",
+    "build:deploy": "astro build && rm -rf ../outsourcing && mv dist ../outsourcing && mv ../outsourcing/_astro ../outsourcing/astro && find ../outsourcing -name '*.html' -exec sed -i '' 's/_astro/astro/g' {} +",
     "preview": "astro preview",
     "serve": "npx serve dist -l 5000",
     "astro": "astro"
