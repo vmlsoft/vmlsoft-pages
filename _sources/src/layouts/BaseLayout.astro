@@ -12,7 +12,54 @@ import HeaderLinks from "../components/HeaderLinks.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VMLSoft Outsourcing</title>
+    <meta
+      name="description"
+      content="VMLSoft provides expert software outsourcing and rapid MVP launch services in Denmark. Senior devs, zero headaches, fully remote-ready. Book your free 30-min code audit!"
+    />
+    <!-- Open Graph tags for social sharing -->
+    <meta
+      property="og:title"
+      content="Expert Software Outsourcing in Denmark | VMLSoft"
+    />
+    <meta
+      property="og:description"
+      content="Get reliable software outsourcing from Danish-based senior developers. Launch your MVP faster and safer. Book your free code audit now!"
+    />
+    <meta property="og:url" content="https://vmlsoft.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://vmlsoft.com/favicon.svg" />
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "VMLSoft ApS",
+        "url": "https://vmlsoft.com",
+        "logo": "https://vmlsoft.com/favicon.svg",
+        "sameAs": [
+          "https://github.com/vmlsoft",
+          "https://linkedin.com/company/vmlsoft"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@vmlsoft.com",
+          "contactType": "Customer Support",
+          "areaServed": ["DK", "EU"],
+          "availableLanguage": ["English", "Danish"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "DK"
+        }
+      }
+    </script>
     <link rel="icon" href="/favicon.svg" />
+    <!-- TrustBox script -->
+    <script
+      type="text/javascript"
+      src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      async></script>
+    <!-- End TrustBox script -->
   </head>
   <body
     class="bg-gradient-to-tr from-blue-50 via-white to-blue-100 text-gray-900 min-h-screen"
@@ -60,6 +107,23 @@ import HeaderLinks from "../components/HeaderLinks.astro";
       <Testimonials />
       <Separator />
     </main>
+    <!-- TrustBox widget - Review Collector -->
+    <div
+      class="trustpilot-widget"
+      data-locale="en-US"
+      data-template-id="56278e9abfbbba0bdcd568bc"
+      data-businessunit-id="6885da155c00453a2c175b80"
+      data-style-height="52px"
+      data-style-width="100%"
+    >
+      <a
+        href="https://www.trustpilot.com/review/vmlsoft.com"
+        target="_blank"
+        rel="noopener">Trustpilot</a
+      >
+    </div>
+    <Separator />
+    <!-- End TrustBox widget -->
     <Footer />
   </body>
 </html>
