@@ -5,3 +5,16 @@
 body {
   font-family: "Inter", system-ui, sans-serif;
 }
+
+main a {
+  text-decoration: underline;
+  color: #2563eb;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+main a:hover,
+main a:focus {
+  color: #1e40af;
+  background-color: #e0e7ff;
+  outline: none;
+}
